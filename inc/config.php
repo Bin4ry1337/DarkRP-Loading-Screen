@@ -10,7 +10,7 @@ $config = array(
 
 try 
 {
-	$con = new PDO('mysql:host=' . @$config['host'] . ';dbname=' . @$config['db'], @$config['username'], @$config['password']);
+	$con = new PDO('mysql:host=' . $config['host'] . ';dbname=' . $config['db'], $config['user'], $config['pass']);
 }
 catch (PDOException $e)
 {

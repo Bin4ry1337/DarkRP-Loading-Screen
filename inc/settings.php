@@ -6,7 +6,7 @@ $api_key = "D738E349D52B98C71497031B08ED70A2"; //Get your API Key here: http://s
 
 
 //Database Configuration
-$mysql  = 0;           //Enable = 1, Disable = 0
+$mysql  = 1;           //Enable = 1, Disable = 0
 $dbhost = 'localhost'; //Database Hostname
 $dbuser = 'root';      //Database Username
 $dbpass = '';          //Database Password

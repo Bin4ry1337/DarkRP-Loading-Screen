@@ -56,7 +56,7 @@ include("header.php");
 								</div>
 
 								<div class="strip-right">
-									$<span class="green">' . $row['money'] . '</span>
+									$<span class="green">' . GrabMoney() . '</span>
 								</div>
 							</div>';
 					}

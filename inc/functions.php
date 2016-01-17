@@ -59,11 +59,23 @@ function GrabSteamName()
 
 function GrabMoney()
 {
-	
+	if(isset($_GET['steamid']) && strlen($_GET['steamid']) == 17)
+	{
+		global $con;
+
+		$steamid = $_GET['steamid'];
+
+		$data = $con->prepare("SELECT * FROM `players` WHERE steamid = ':steamid'");
+		$data->execute(array(
+			':steamid' => $steamid
+		));
+		
+		while($row = $data->fetch(PDO::FETCH_ASSOC))
+		{
+			echo $row['money'];
+		}
+	}
 }
-
-
-
 
 
 
