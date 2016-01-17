@@ -15,7 +15,7 @@ include("header.php");
 	<div class="columns small-12">
 		<div class="column small-12 medium-4">
 			<div class="box">
-				<div class="box-header">
+				<div class="box-header" style="background-color: <?php echo $header_color; ?>;">
 					<div class="box-title">
 						<?php echo $title_player ?>
 					</div>
@@ -31,7 +31,7 @@ include("header.php");
 							<img src="img/icons/player.png" width="22">
 						</div>
 
-						<div class="strip-right">
+						<div class="strip-right dont-break-out">
 							<?php GrabSteamName(); ?>
 						</div>
 					</div>
@@ -78,7 +78,7 @@ include("header.php");
 			</div>
 
 			<div class="box">
-				<div class="box-header">
+				<div class="box-header" style="background-color: <?php echo $header_color; ?>;">
 					<div class="box-title">
 						<?php echo $title_server ?>
 					</div>
@@ -91,7 +91,7 @@ include("header.php");
 						</div>
 
 						<div class="strip-right">
-							BinServers | custom | wire
+							<span id="Server"></span>
 						</div>
 					</div>
 
@@ -101,7 +101,7 @@ include("header.php");
 						</div>
 
 						<div class="strip-right">
-							rp_downtown_4c_v2
+							<span id="Map"></span>
 						</div>
 					</div>
 
@@ -111,7 +111,7 @@ include("header.php");
 						</div>
 
 						<div class="strip-right">
-							10/24 Players
+							<span id="Players"></span>
 						</div>
 					</div>
 
@@ -121,7 +121,7 @@ include("header.php");
 						</div>
 
 						<div class="strip-right">
-							DarkRP
+							<span id="Gamemode"></span>
 						</div>
 					</div>
 				</div>
@@ -130,7 +130,7 @@ include("header.php");
 
 		<div class="column small-12 medium-8">
 			<div class="box">
-				<div class="box-header">
+				<div class="box-header" style="background-color: <?php echo $header_color; ?>;">
 					<div class="box-title">
 						<?php echo $title_rules ?>
 					</div>
@@ -146,7 +146,7 @@ include("header.php");
 									1
 								</div>
 
-								<div class="strip-right">
+								<div class="strip-right2">
 									' . $rule1 . '
 								</div>
 							</div>';
@@ -159,7 +159,7 @@ include("header.php");
 									2
 								</div>
 
-								<div class="strip-right">
+								<div class="strip-right2">
 									' . $rule2 . '
 								</div>
 							</div>';
@@ -172,7 +172,7 @@ include("header.php");
 									3
 								</div>
 
-								<div class="strip-right">
+								<div class="strip-right2">
 									' . $rule3 . '
 								</div>
 							</div>';
@@ -185,7 +185,7 @@ include("header.php");
 									4
 								</div>
 
-								<div class="strip-right">
+								<div class="strip-right2">
 									' . $rule4 . '
 								</div>
 							</div>';
@@ -198,7 +198,7 @@ include("header.php");
 									5
 								</div>
 
-								<div class="strip-right">
+								<div class="strip-right2">
 									' . $rule5 . '
 								</div>
 							</div>';
@@ -211,7 +211,7 @@ include("header.php");
 									6
 								</div>
 
-								<div class="strip-right">
+								<div class="strip-right2">
 									' . $rule6 . '
 								</div>
 							</div>';
@@ -224,7 +224,7 @@ include("header.php");
 									7
 								</div>
 
-								<div class="strip-right">
+								<div class="strip-right2">
 									' . $rule7 . '
 								</div>
 							</div>';
@@ -237,7 +237,7 @@ include("header.php");
 									8
 								</div>
 
-								<div class="strip-right">
+								<div class="strip-right2">
 									' . $rule8 . '
 								</div>
 							</div>';
@@ -250,7 +250,7 @@ include("header.php");
 									9
 								</div>
 
-								<div class="strip-right">
+								<div class="strip-right2">
 									' . $rule9 . '
 								</div>
 							</div>';
@@ -263,7 +263,7 @@ include("header.php");
 									10
 								</div>
 
-								<div class="strip-right">
+								<div class="strip-right2">
 									' . $rule10 . '
 								</div>
 							</div>';
@@ -276,7 +276,7 @@ include("header.php");
 									11
 								</div>
 
-								<div class="strip-right">
+								<div class="strip-right2">
 									' . $rule11 . '
 								</div>
 							</div>';
@@ -289,7 +289,7 @@ include("header.php");
 									12
 								</div>
 
-								<div class="strip-right">
+								<div class="strip-right2">
 									' . $rule12 . '
 								</div>
 							</div>';
@@ -302,7 +302,7 @@ include("header.php");
 									13
 								</div>
 
-								<div class="strip-right">
+								<div class="strip-right2">
 									' . $rule13 . '
 								</div>
 							</div>';
@@ -315,7 +315,7 @@ include("header.php");
 									14
 								</div>
 
-								<div class="strip-right">
+								<div class="strip-right2">
 									' . $rule14 . '
 								</div>
 							</div>';
@@ -328,7 +328,7 @@ include("header.php");
 									15
 								</div>
 
-								<div class="strip-right">
+								<div class="strip-right2">
 									' . $rule15 . '
 								</div>
 							</div>';

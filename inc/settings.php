@@ -24,26 +24,28 @@ $title_rules  = "Server Rules"; //Title of rules box
 
 
 //Rules
-$rule1  = "No RDM'ing on this server.";
-$rule2  = "";
-$rule3  = "";
-$rule4  = "";
-$rule5  = "";
-$rule6  = "";
-$rule7  = "";
-$rule8  = "";
-$rule9  = "";
-$rule10 = "";
-$rule11 = "";
-$rule12 = "";
-$rule13 = "";
-$rule14 = "";
-$rule15 = "";
+$rule1  = "Do not bully or harass other players";
+$rule2  = "Do not be annoying";
+$rule3  = "Do not propkill";
+$rule4  = "Do not RDM";
+$rule5  = "Do not metagame";
+$rule6  = "Do not hack or exploit";
+$rule7  = "Do not micspam";
+$rule8  = "Do not be a racist";
+$rule9  = "Do not kill AFK players";
+$rule10 = "Do not propsurf";
+$rule11 = "Do not fading door spam";
+$rule12 = "Do not break NLR";
+$rule13 = "Do not abuse jobs";
+$rule14 = "Obey and listen to all staff orders";
+$rule15 = "Thank you, have fun!";
 
 
 
 //Color Configurations
-$color_name  = "#FFFFFF";
-$color_name2 = "#4aa3df";
+$color_name   = "#FFFFFF";
+$color_name2  = "#4aa3df";
+
+$header_color =  "#2c3e50";
 
 ?>

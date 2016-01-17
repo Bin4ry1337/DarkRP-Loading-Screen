@@ -65,14 +65,14 @@ function GrabMoney()
 
 		$steamid = $_GET['steamid'];
 
-		$data = $con->prepare("SELECT * FROM `players` WHERE steamid = ':steamid'");
+		$data = $con->prepare("SELECT * FROM `players` WHERE steamid = ?");
 		$data->execute(array(
-			':steamid' => $steamid
+			$steamid
 		));
 		
 		while($row = $data->fetch(PDO::FETCH_ASSOC))
 		{
-			echo $row['money'];
+			return $row['money'];
 		}
 	}
 }

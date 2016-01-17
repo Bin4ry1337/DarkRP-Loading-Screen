@@ -19,5 +19,23 @@ if($mysql == 1)
 	<script type="javascript" src="js/jquery.js"></script>
 	<script type="javascript" src="js/foundation.js"></script>
 	<script type="javascript" src="js/main.js"></script>
+	<script type="text/javascript">
+
+	function GameDetails( servername, serverurl, mapname, maxplayers, steamid, gamemode ) {
+		document.getElementById("Server").innerHTML = servername;
+		document.getElementById("Gamemode").innerHTML = gamemode;
+		document.getElementById("Players").innerHTML = maxplayers;
+		document.getElementById("Map").innerHTML = mapname;
+	}
+
+	function DownloadingFile( fileName ) {
+		document.getElementById("FileLoad").innerHTML = fileName;
+	}
+
+	function SetStatusChanged( status ) {
+		document.getElementById("FileStatus").innerHTML = status;
+	}
+
+	</script>
 </head>
 <body>
